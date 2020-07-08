@@ -291,8 +291,12 @@ header {
 .section-servico {
     flex: 1;
     text-align: center;
-    border-left: 1px solid #333;
     border-right: 1px solid #333;
+    
+}
+
+.section-servico:first-child {
+    border-left: 1px solid #333;
 }
 
 .section-servico h4 {
