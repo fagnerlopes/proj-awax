@@ -285,12 +285,14 @@ header {
 /***** Serviços *******/
 
 .section-servicos {
-    display:flex;
+    display:flex;    
 }
 
 .section-servico {
     flex: 1;
     text-align: center;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
 }
 
 .section-servico h4 {
