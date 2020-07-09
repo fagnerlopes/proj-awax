@@ -525,3 +525,199 @@ header {
     background-color: #B28756;
 }
 
+/* Depoimentos */
+
+.secao-depoimento {
+    overflow: hidden;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+}
+
+.secao-depoimento .sliders {
+    /* equivalente a 3 slides */
+    width: 300vw;
+    height: 100%;
+}
+
+.secao-depoimento .slide {
+    width: 680px;
+    min-width: 680px;
+    height: 100%;
+    min-height: 330px;
+    display: inline-block;
+    background-color:#fff;
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.secao-depoimento .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* centraliza horizontalmente */
+    justify-content: center;
+    /* centraliza vertical */
+    align-items: center;
+    color: #000;    
+    text-transform: uppercase;    
+}
+
+.secao-depoimento-area .sliders-pointers {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    margin-top: 20px;    
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-depoimento-area .pointer {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #B28756;
+    border-radius: 8px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+/* precisa ter as duas classes para receber o atributo background*/
+.secao-depoimento-area .pointer.active {
+    background-color: #B28756;
+}
+
+.secao-depoimento--avatar img {
+    width: 150px;
+    height: auto;    
+}
+
+.secao-depoimento--nome,
+.secao-depoimento--funcao,
+.secao-depoimento-citacao p {
+    text-transform: none;
+}
+
+.secao-depoimento--nome {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.secao-depoimento--funcao {
+    font-size: 12px;
+    margin-top: 7px;
+    color: #333;    
+}
+
+.secao-depoimento-citacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-depoimento-citacao img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.secao-depoimento-citacao p {
+    text-align: center;
+    font-size: 15px;
+    color: #999;
+
+}
+
+/* logotipos */
+.secao-logotipos-parceiro-area {
+    /*box-shadow: 0px 0px 1px #000;*/
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.secao-logotipos-parceiro {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.secao-logotipos-parceiro-area img {
+    width: 100px;
+    height: auto;
+    margin-right: 70px;
+    
+}
+
+.secao-logotipos-parceiro-area img:last-child {
+    margin-right: 0;
+}
+
+/* Preços */
+
+.secao-preco {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+.secao-preco-tabela {
+    width: 265px;
+    min-height: 330px;
+    margin-right: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secao-preco-tabela:last-child {
+    margin-right: 0;
+}
+
+.secao-preco-tabela h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.secao-preco-tabela h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.secao-preco-tabela h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color:#999;
+    margin-bottom: 15px;
+
+}
+
+.secao-preco-tabela p {
+    font-size: 12px;
+    color:#333;
+    margin-top: 13px;
+}
+
+/*.secao-preco-tabela p::after {
+    white-space: pre;
+    content: '\A \002D \002D \002D \002D \002D \002D \A';
+}*/
+
+.secao-preco-tabela .button.cinza {
+    background-color: #333;
+    max-width: 70%;
+    font-size: 11px;
+}
