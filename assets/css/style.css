@@ -17,6 +17,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    border: 0;
+    margin: 0;
+    padding:0;
 }
 
 /***************************************
@@ -124,7 +127,8 @@ header {
     /* centraliza vertical */
     align-items: center;
     color: #fff;    
-    text-transform: uppercase;    
+    text-transform: uppercase;  
+    text-align: center;  
 }
 
 .banner h1 {
@@ -197,13 +201,16 @@ header {
 }
 
 .padrao .secao-titulo {    
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
+    font-weight: bold;
+    
 }
 
 .padrao .secao-descricao {
     font-size: 14px;
     margin-bottom: 40px;
+    color: #999;    
 }
 
 .padrao .secao-corpo {
@@ -215,7 +222,10 @@ header {
     background-color: #f7f7f7;
 }
 
-.padrao.claro .secao-titulo,
+.padrao.claro.branco {
+    background-color: #fff;
+}
+
 .padrao.claro .secao-corpo {
     color: #000;
 }
@@ -227,6 +237,8 @@ header {
 .padrao.escuro {
     background-color: #333;
 }
+
+
 
 .padrao.escuro .secao-titulo,
 .padrao.escuro .secao-corpo {
@@ -526,7 +538,6 @@ header {
 }
 
 /* Depoimentos */
-
 .secao-depoimento {
     overflow: hidden;
     max-width: 700px;
@@ -669,16 +680,19 @@ header {
     justify-content: center;
     align-items: center;
     margin:auto;
+    
 }
 .secao-preco-tabela {
     width: 265px;
-    min-height: 330px;
+    min-height: 370px;
     margin-right: 20px;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .secao-preco-tabela:last-child {
@@ -702,22 +716,387 @@ header {
     text-transform: uppercase;
     color:#999;
     margin-bottom: 15px;
-
 }
 
 .secao-preco-tabela p {
     font-size: 12px;
     color:#333;
     margin-top: 13px;
+    text-align: center;
 }
-
-/*.secao-preco-tabela p::after {
-    white-space: pre;
-    content: '\A \002D \002D \002D \002D \002D \002D \A';
-}*/
 
 .secao-preco-tabela .button.cinza {
     background-color: #333;
     max-width: 70%;
     font-size: 11px;
+}
+
+.secao-preco-tabela .button.cinza:hover {
+    background-color: #B28756;
+}
+
+
+/* Produtos */
+/* Slider de Produtos*/
+.secao-produto {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.secao-produto-area .sliders {
+    /* equivalente a 3 slides */
+    width: 300vw;
+    height: 100%;
+}
+
+.secao-produto .slide {
+    width: 100%;
+    min-width: 1140px;
+    height: 100%;
+    min-height: 530px;
+    display: inline-block;
+    background-color:#fff;
+    margin-right: 20px;
+    padding: 30px;
+    
+}
+
+.secao-produto-area .slidearea {
+    display: flex;
+    height: 100%;
+    /* centraliza horizontalmente */
+    justify-content: center;
+    /* centraliza vertical */
+    align-items: center;
+    color: #000;    
+    text-transform: uppercase; 
+     
+}
+
+.secao-produto-area .sliders-pointers {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    margin-top: 20px;    
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-produto-area .pointer {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #B28756;
+    border-radius: 8px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+/* precisa ter as duas classes para receber o atributo background*/
+.secao-produto .pointer.active {
+    background-color: #B28756;
+}
+
+.secao-produto-left {
+    text-align:center;
+    margin-bottom:30px;    
+}
+
+.secao-produto-right {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.secao-produto--item {
+    display:flex;
+    margin-bottom:20px;
+}
+.secao-produto--item img {
+    width:20px;
+    height:20px;
+    margin-right:20px;
+}
+.secao-produto--item div {
+    flex:1;
+    color:#999;
+    line-height:20px;
+}
+.secao-produto--item div h4 {
+    color:#000;
+    font-size:17px;
+    font-weight:600;
+}
+
+.secao-produto--item p {
+    text-transform: none;
+    font-size: 13px;
+}
+
+.secao-numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.secao-numeros {
+    text-align: center;
+}
+
+.secao-numeros-item h1 {
+    font-size: 45px;
+    color: #B28756;
+}
+
+.secao-numeros-item h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.secao-numeros-item p {
+    font-size: 13px;
+    color: #999;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.secao-numeros-linha {
+    width:25px;
+    border-bottom:4px solid #999;
+    margin:auto;
+    margin-top: 10px;
+}
+
+/* Compartilhar */
+.secao-compartilhar {
+    height: 100px;
+}
+.secao-compartilhar-area,
+.secao-compartilhar-item,
+.secao-compartilhar-titulo,
+.secao-compartilhar--icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-compartilhar-area {    
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;    
+}
+
+.secao-compartilhar-titulo {
+    margin: 0 20px;
+    font-weight: 600;
+    color: #888;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.secao-compartilhar-titulo img {
+    margin-right: 20px;
+}
+
+.secao-compartilhar-item {
+    font-size: 12px;
+    color: #999;
+    font-weight: 600;
+    margin-right: 35px;
+}
+
+.secao-compartilhar--icone {
+    width:30px;
+    height:30px;
+    border-radius:15px;
+    background-color:#CCC;
+    margin-right: 5px;   
+    cursor: pointer;
+}
+
+.secao-compartilhar--icone img {
+    height:12px;
+}
+
+.secao-compartilhar--icone.twitter {
+    background-color:#34c5f0;
+}
+
+.secao-compartilhar--icone.linkedin {
+    background-color:#127cb4;
+}
+.secao-compartilhar--icone.facebook {
+    background-color:#336297;
+}
+.secao-compartilhar--icone.googleplus {
+    background-color:#e74237;
+}
+.secao-compartilhar--icone.pinterest {
+    background-color:#b71c29;
+}
+
+
+.secao-contato {
+    width: 600px;
+    height: 400px;
+    max-width: 600px;
+    min-width: 600px;
+    margin:auto;
+
+}
+
+.secao-contato--grupo {    
+    display: flex; 
+    width: 100%;
+}
+
+.secao-contato--grupo input[type=text],
+.secao-contato textarea {
+    margin-right: 30px;
+    display:block;
+    width:100%;
+    height:40px;
+    border:0;
+    background:transparent;
+    border-bottom:2px solid #CCC;
+    outline:0;
+    margin-top:40px;    
+}
+
+.secao-contato textarea {
+    height:100px;
+    resize:none;
+}
+
+.secao-contato--grupo input[type=submit] {
+    margin:auto;
+}
+
+.secao-contato-btn-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-mapa {
+    background-image: url('../images/mapa.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.secao-mapa--area {
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.secao-mapa--info {
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    color: #000;
+}
+
+.secao-mapa--info-item {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #999;
+    margin-top: 10px;
+}
+
+.secao-mapa--info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #999;
+    margin-right: 10px;
+}
+
+/* Rodapé */
+
+.secao-rodape {
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.padrao.rodape {
+    padding-top: 40px;
+    background-color: #000;
+}
+
+.secao-rodape-esquerda,
+.secao-rodape-meio,
+.secao-rodape-direita {
+    display: flex;
+    flex-direction: column;
+    width: Calc(1140px / 3);
+    color: #999;
+    font-size: 14px;
+}
+
+.secao-rodape--social {
+    display: flex;
+}
+
+.secao-rodape--social-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: #999;   
+}
+
+.secao-rodape--social-item:hover {
+    background-color: #B28756;
+}
+
+.secao-rodape-copyright {
+    width: 100%;
+    height: 20px;
+    display: flex;    
+    bottom: 30px;
+    margin-top: 70px;    
+    align-items: center;
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 600;
+}
+
+.secao-rodape-meio {
+    padding-right:30px;
+    padding-left: 30px;
+}
+
+.button.btn-rodape {
+    max-width: 70%;
+    cursor: pointer;
+}
+
+.secao-rodape-direita {
+    background-color: #333;    
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.secao-rodape-direita input[type=text] {
+    width: Calc((1140px / 3) - 130px);
+    height: 40px;
+    background-color: transparent;
+    border-bottom: 2px solid #ccc;
+    color:#ccc;
 }
