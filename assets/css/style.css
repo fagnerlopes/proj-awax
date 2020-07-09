@@ -184,56 +184,56 @@ header {
 /************ Sections ***********
 **********************************/
 
-.default {
+.padrao {
     padding-top: 50px;
     padding-bottom: 50px;  
 }
 
-.default .section-title,
-.default .section-description {
+.padrao .secao-titulo,
+.padrao .secao-descricao {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.default .section-title {    
+.padrao .secao-titulo {    
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.default .section-description {
+.padrao .secao-descricao {
     font-size: 14px;
     margin-bottom: 40px;
 }
 
-.default .section-body {
+.padrao .secao-corpo {
     max-width: 1140px;
     margin: 0 auto;    
 }
 
-.default.light {
+.padrao.claro {
     background-color: #f7f7f7;
 }
 
-.default.light .section-title,
-.default.light .section-body {
+.padrao.claro .secao-titulo,
+.padrao.claro .secao-corpo {
     color: #000;
 }
 
-.default.light .section-description {
+.padrao.claro .secao-descricao {
     color: #333;
 }
 
-.default.dark {
+.padrao.escuro {
     background-color: #333;
 }
 
-.default.dark .section-title,
-.default.dark .section-body {
+.padrao.escuro .secao-titulo,
+.padrao.escuro .secao-corpo {
     color: #fff;
 }
 
-.default.dark .section-description {
+.padrao.escuro .secao-descricao {
     color: #CCC;
 }
 
@@ -259,53 +259,53 @@ header {
 *********** CSS Espcecífico ************
 ***************************************/
 
-.section-sobre {
+.secao-sobre {
     display: flex;
 }
 
-.section-sobre--left {
+.secao-sobre--left {
     flex:1;
 }
 
-.section-sobre--left p {
+.secao-sobre--left p {
     font-size: 14px;
     line-height: 25px;
 }
 
-.section-sobre--right {
+.secao-sobre--right {
     width: 520px;  
     text-align: center;
 }
 
-.section-sobre--right img {
+.secao-sobre--right img {
     width: 480px;
     box-shadow: 0px 5px 10px #333;
 }
 
 /***** Serviços *******/
 
-.section-servicos {
+.secao-servicos {
     display:flex;    
 }
 
-.section-servico {
+.secao-servico {
     flex: 1;
     text-align: center;
     border-right: 1px solid #999;  
     padding: 15px;  
 }
 
-.section-servico:first-child {
+.secao-servico:first-child {
     border-left: 1px solid #999;
 }
 
-.section-servico h4 {
+.secao-servico h4 {
     margin-top: 16px;
     text-transform: uppercase;
     font-size: 18px;
 }
 
-.section-servico p {
+.secao-servico p {
     font-size: 12px;
     margin-top: 13px;
     color: #999;
@@ -313,13 +313,13 @@ header {
 
 /********** Projetos **********/
 
-.section-projetos {
+.secao-projetos {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.section-projetos--filtros {
+.secao-projetos--filtros {
     display: inline-block;
     border: 1px solid #ddd;
     background-color: #eee;
@@ -327,12 +327,12 @@ header {
     padding: 0 20px;
 }
 
-.section-projetos--filtros ul,
-.section-projetos--filtros li {    
+.secao-projetos--filtros ul,
+.secao-projetos--filtros li {    
     list-style: none;
 }
 
-.section-projetos--filtros li {
+.secao-projetos--filtros li {
     display: inline-block;
     text-transform: uppercase;
     font-size: 13px;
@@ -343,16 +343,16 @@ header {
     cursor: pointer;
 }
 
-.section-projetos--filtros li:hover,
-.section-projetos--filtros li.active {
+.secao-projetos--filtros li:hover,
+.secao-projetos--filtros li.active {
     border-bottom: 3px solid #B28756;
 }
 
-.section-projetos--filtros li:first-child {
+.secao-projetos--filtros li:first-child {
     border-left: 0;
 }
 
-.section-projetos--fotos {
+.secao-projetos--fotos {
     width: 100vw;
     max-width: 1140px;
     margin-top: 20px;
@@ -361,27 +361,27 @@ header {
     justify-content: center;
 }
 
-.section-projetos--foto {
+.secao-projetos--foto {
     width: 280px; 
 }
 
-.section-projetos--fotoarea {
+.secao-projetos--fotoarea {
     margin:10px;
     width: 260px;
     height: 160px;
     cursor: pointer;
 }
 
-.section-projetos--fotoarea img {
+.secao-projetos--fotoarea img {
     width: inherit;
     height: inherit;
 }
 
-.section-projetos--fotoarea:hover .section-projetos--fotoinfo  {
+.secao-projetos--fotoarea:hover .secao-projetos--fotoinfo  {
     display: flex;
 }
 
-.section-projetos--fotoinfo {
+.secao-projetos--fotoinfo {
     display: none;
     justify-content: center;
     align-items: center;
@@ -394,14 +394,88 @@ header {
     
 }
 
-.section-projetos--fotoinfo h5 {
+.secao-projetos--fotoinfo h5 {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.section-projetos--fotoinfo p {
+.secao-projetos--fotoinfo p {
     font-size: 8px;
     margin-top: 14px;
+}
+
+/***** Equipe *******/
+
+.bg-equipe {
+    background-image: url('../images/bg-equipe.jpg');
+    background-size:cover;
+    background-position: center;
+    padding: 0;
+}
+
+.secao-equipe-area {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;    
+}
+
+.secao-equipe {
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.secao-equipe .sliders {
+    /* equivalente a 3 slides */
+    width: 300vw;
+    height: 100%;
+}
+
+.secao-equipe .slide {
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color:#fff;
+    margin-right: 20px;
+}
+
+.secao-equipe .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* centraliza horizontalmente */
+    justify-content: center;
+    /* centraliza vertical */
+    align-items: center;
+    color: #fff;    
+    text-transform: uppercase;    
+}
+
+.secao-equipe-area .sliders-pointers {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    margin-top: 20px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-equipe-area .pointer {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #B28756;
+    border-radius: 8px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+/* precisa ter as duas classes para receber o atributo background*/
+.secao-equipe-area .pointer.active {
+    background-color: #B28756;
 }
 
