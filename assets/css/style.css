@@ -436,10 +436,11 @@ header {
 .secao-equipe .slide {
     width: 280px;
     height: 100%;
-    min-height: 300px;
+    min-height: 330px;
     display: inline-block;
     background-color:#fff;
     margin-right: 20px;
+    padding: 30px 0;
 }
 
 .secao-equipe .slidearea {
@@ -450,7 +451,7 @@ header {
     justify-content: center;
     /* centraliza vertical */
     align-items: center;
-    color: #fff;    
+    color: #000;    
     text-transform: uppercase;    
 }
 
@@ -459,8 +460,7 @@ header {
     height: 20px;
     display: flex;
     position: absolute;
-    margin-top: 20px;
-    
+    margin-top: 20px;    
     justify-content: center;
     align-items: center;
 }
@@ -476,6 +476,52 @@ header {
 
 /* precisa ter as duas classes para receber o atributo background*/
 .secao-equipe-area .pointer.active {
+    background-color: #B28756;
+}
+
+.secao-equipe--avatar img {
+    width: 150px;
+    height: auto;    
+}
+
+.secao-equipe--nome,
+.secao-equipe--funcao {
+    text-transform: none;
+}
+
+.secao-equipe--nome {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.secao-equipe--funcao {
+    font-size: 12px;
+    margin-top: 7px;
+    color: #333;    
+}
+
+.secao-equipe--social {
+    margin-top: 10px;
+    display: flex;    
+}
+
+.secao-equipe--social a {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #999;
+    border-radius: 13px;
+}
+
+.secao-equipe--social a:last-child {
+    margin-right: 0;
+}
+
+.secao-equipe--social a:hover {
     background-color: #B28756;
 }
 
