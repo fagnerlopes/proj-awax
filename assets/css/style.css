@@ -377,8 +377,12 @@ header {
     height: inherit;
 }
 
-.section-projetos--fotoinfo {
+.section-projetos--fotoarea:hover .section-projetos--fotoinfo  {
     display: flex;
+}
+
+.section-projetos--fotoinfo {
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
