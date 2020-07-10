@@ -1,6 +1,10 @@
 /**************  Cores *****************
 
-    Laranja : #B28756;
+    Destaques   : #B28756;
+    Cinza Texto : #333;
+    Cinza Claro : #ccc;
+    Nav         : #000;
+    Rodapé      : #000;
 
 ***************************************/
 
@@ -27,9 +31,6 @@ body {
 ***************************************/
 
 /************** Header ****************/
-
-
-
 header {
     height: 100px;
     background-color: #000;
@@ -90,13 +91,29 @@ header {
     border-bottom: 5px solid #B28756;
 }
 
+/************** Buttons **************
+**************************************/
+.button {
+    display: block;
+    background-color: #B28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 600;
+    margin-top: 30px;
+    border-radius: 20px;
+    max-width: 25%;
+    text-align: center;
+}
+
 .btn-menu {
     display: none;
 }
 
 /********** Banner Slider ************
 *************************************/
-
 .banner {
     /* 100vh = 100% da altura da tela - altura do menu */
     height: calc(100vh - 100px);
@@ -136,9 +153,6 @@ header {
 }
 
 .banner h1 {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
     text-transform: uppercase;
     font-weight: bold;
     font-size: 50px;
@@ -191,7 +205,6 @@ header {
 
 /************ Sections ***********
 **********************************/
-
 .padrao {
     padding-top: 50px;
     padding-bottom: 50px;  
@@ -242,8 +255,6 @@ header {
     background-color: #333;
 }
 
-
-
 .padrao.escuro .secao-titulo,
 .padrao.escuro .secao-corpo {
     color: #fff;
@@ -253,28 +264,9 @@ header {
     color: #CCC;
 }
 
-/************** Buttons **************
-**************************************/
-
-.button {
-    display: block;
-    background-color: #B28756;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 13px;
-    text-decoration: none;
-    padding: 10px 30px;
-    font-weight: 600;
-    margin-top: 30px;
-    border-radius: 20px;
-    max-width: 25%;
-    text-align: center;
-}
-
 /***************************************
 *********** CSS Espcecífico ************
 ***************************************/
-
 .secao-sobre {
     display: flex;
 }
@@ -298,8 +290,8 @@ header {
     box-shadow: 0px 5px 10px #333;
 }
 
-/***** Serviços *******/
-
+/************* Serviços *************
+*************************************/
 .secao-servicos {
     display:flex;    
 }
@@ -327,8 +319,8 @@ header {
     color: #999;
 }
 
-/********** Projetos **********/
-
+/************ Projetos **************
+*************************************/
 .secao-projetos {
     display: flex;
     flex-direction: column;
@@ -421,8 +413,8 @@ header {
     margin-top: 14px;
 }
 
-/***** Equipe *******/
-
+/************** Equipe **************
+*************************************/
 .bg-equipe {
     background-image: url('../images/bg-equipe.jpg');
     background-size:cover;
@@ -541,7 +533,8 @@ header {
     background-color: #B28756;
 }
 
-/* Depoimentos */
+/********** Depoimentos ************
+*************************************/
 .secao-depoimento {
     overflow: hidden;
     max-width: 700px;
@@ -644,7 +637,8 @@ header {
 
 }
 
-/* logotipos */
+/******** barra de logotipos*********
+*************************************/
 .secao-logotipos-parceiro-area {
     /*box-shadow: 0px 0px 1px #000;*/
     border-top: 1px solid #ccc;
@@ -674,8 +668,8 @@ header {
     margin-right: 0;
 }
 
-/* Preços */
-
+/************** Preços **************
+*************************************/
 .secao-preco {
     width: 100%;
     height: 100%;
@@ -740,7 +734,9 @@ header {
 }
 
 
-/* Produtos */
+/************* Produtos *************
+*************************************/
+
 /* Slider de Produtos*/
 .secao-produto {
     overflow: hidden;
@@ -803,6 +799,7 @@ header {
     background-color: #B28756;
 }
 
+/* Conteúdo do Slide */
 .secao-produto-left {
     text-align:center;
     margin-bottom:30px;    
@@ -838,6 +835,8 @@ header {
     font-size: 13px;
 }
 
+/******* Números/Resultados *********
+*************************************/
 .secao-numeros {
     display: flex;
     justify-content: center;
@@ -874,7 +873,8 @@ header {
     margin-top: 10px;
 }
 
-/* Compartilhar */
+/***** Barra de compartilhamentos ***
+*************************************/
 .secao-compartilhar {
     height: 100px;
 }
@@ -943,14 +943,14 @@ header {
     background-color:#b71c29;
 }
 
-
+/********* Form de Contato **********
+*************************************/
 .secao-contato {
     width: 600px;
     height: 400px;
     max-width: 600px;
     min-width: 600px;
     margin:auto;
-
 }
 
 .secao-contato--grupo {    
@@ -986,6 +986,8 @@ header {
     align-items: center;
 }
 
+/************* Mapa *************
+*************************************/
 .secao-mapa {
     background-image: url('../images/mapa.png');
     background-size: cover;
@@ -1026,8 +1028,8 @@ header {
     margin-right: 10px;
 }
 
-/* Rodapé */
-
+/************* Rodapé ***************
+*************************************/
 .secao-rodape {
     padding-bottom: 30px;
     display: flex;
@@ -1104,6 +1106,9 @@ header {
     border-bottom: 2px solid #ccc;
     color:#ccc;
 }
+
+/********** Responsividade **********
+*************************************/
 
 
 @media (min-width: 450px) and (max-width:800px) {
@@ -1266,7 +1271,158 @@ header {
 }
 
 @media (max-width: 449px) {
+    .logo {
+        margin-left: 30px;
+    }
+
     nav {
         display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 65vw;
+        height: calc(100vh - 100px);
+        top:100px;
+        right: 0;
+        border: 0;
     }
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        border: 0;
+    }
+
+    .menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-right: 50px;
+        border: 0;
+    }
+
+    .menu li a:hover,
+    .menu li.active a {
+        border: 0;
+        color: #B28756;
+    }
+
+    .btn-menu {
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+
+    .secao-sobre {
+        flex-direction: column;
+    }
+
+    .secao-sobre--left {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .secao-sobre--right {
+        width: auto;
+    }
+
+    .secao-servicos {
+        flex-wrap: wrap;
+    }
+
+    .secao-servico {
+        min-width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .secao-servico:first-child {
+        border-left: 0;
+    }
+
+    .button {
+        height: 40px;
+    }
+
+    .secao-equipe {
+        max-width: 580px;
+    }
+
+    .secao-depoimento-citacao p {
+        font-size: 22px;
+    }
+
+    .secao-depoimento--nome {
+        font-size: 30px;
+    }
+
+    .secao-depoimento--funcao {
+        font-size: 24px;
+    }
+
+    .secao-preco-tabela {
+        margin: 10px;
+    }
+
+    .secao-preco-tabela:last-child {
+        margin-right: 10px;
+    }
+
+    .secao-produto .slide .slidearea {
+        max-width: 700px;
+    }
+
+    .secao-numeros {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .secao-numeros-item {
+        max-width: 364px ;
+        padding: 20px;
+    }
+
+    .secao-mapa--info {
+        background-color: rgba(255,255, 255, 0.8);
+        color: #333;
+    }
+
+    .padrao.rodape {
+        padding: 40px;
+    }
+
+    .secao-rodape {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secao-rodape-esquerda,
+    .secao-rodape-meio,
+    .secao-rodape-direita {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secao-rodape-direita {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .secao-rodape-direita input[type=text] {
+        width: Calc(100vw - 150px);
+    }
+
+    .secao-rodape-meio {
+        padding: 0;
+    }
+
+    .secao-rodape-copyright {
+        justify-content: center;
+    }
+    
 }
